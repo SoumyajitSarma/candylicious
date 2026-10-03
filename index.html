@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candylicious - Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        :root {
+            --primary: #ec4899;
+            --primary-dark: #be185d;
+            --secondary: #8b5cf6;
+            --accent-cyan: #38bdf8;
+            --bg-gradient-start: #0f172a;
+            --bg-gradient-end: #1e1b4b;
+            --card-bg: rgba(30, 41, 59, 0.75);
+            --card-border: rgba(255, 255, 255, 0.12);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-highlight: #f472b6;
+            --accent-glow: rgba(236, 72, 153, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+            background-attachment: fixed;
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 44px 32px;
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), 0 0 35px var(--accent-glow);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 14px rgba(236, 72, 153, 0.4);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.75rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffffff, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 24px;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            text-align: left;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--card-border);
+        }
+
+        .meta-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 14px 18px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .meta-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .meta-value {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        .meta-value a {
+            color: var(--text-highlight);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .meta-value a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        section {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 32px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        section:hover {
+            border-color: rgba(236, 72, 153, 0.35);
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        h2 .section-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(139, 92, 246, 0.2));
+            border: 1px solid rgba(236, 72, 153, 0.3);
+            color: var(--text-highlight);
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 0.98rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 12px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 26px;
+            color: var(--text-muted);
+            font-size: 0.98rem;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 6px;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.3rem;
+            line-height: 1;
+        }
+
+        li strong {
+            color: var(--text-main);
+        }
+
+        .purpose-tag {
+            display: block;
+            margin-top: 8px;
+            padding: 10px 14px;
+            background: rgba(139, 92, 246, 0.12);
+            border-left: 3px solid var(--secondary);
+            border-radius: 0 10px 10px 0;
+            font-size: 0.9rem;
+            color: #cbd5e1;
+        }
+
+        .purpose-tag strong {
+            color: #a78bfa;
+        }
+
+        a {
+            color: var(--text-highlight);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 24px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 20px 12px;
+            }
+
+            header {
+                padding: 28px 20px;
+            }
+
+            section {
+                padding: 22px 18px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .meta-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">Privacy Policy</span>
+            <h1>Candylicious</h1>
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <div class="meta-label">Application</div>
+                    <div class="meta-value">Candylicious</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Effective Date</div>
+                    <div class="meta-value">October 2026</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Developer / Studio</div>
+                    <div class="meta-value">Candylicious</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Support Email</div>
+                    <div class="meta-value"><a href="mailto:soumyajitsa@gmail.com">soumyajitsa@gmail.com</a></div>
+                </div>
+                <div class="meta-item" style="grid-column: 2 / -1;">
+                    <div class="meta-label">Developer Profile</div>
+                    <div class="meta-value"><a href="https://play.google.com/store/apps/dev?id=7756569652824160529"
+                            target="_blank" rel="noopener">Google Play Store Developer Page</a></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="section-1">
+                <h2><span class="section-num">1</span> Overview and Core Commitment</h2>
+                <p>Candylicious is designed as a self-contained, casual match-3 puzzle game. We value your privacy and
+                    are committed to minimizing data collection. We do not require registration, phone numbers, or
+                    physical addresses to play.</p>
+            </section>
+
+            <section id="section-2">
+                <h2><span class="section-num">2</span> Information We Collect</h2>
+                <p>Depending on your device settings and game version, the following categories of data may be
+                    processed:</p>
+                <ul>
+                    <li>
+                        <strong>Gameplay Progress &amp; Local Storage:</strong> High scores, completed levels (Levels 1
+                        to 10), unlocked achievements, accumulated in-game coins, remaining tries, and booster inventory
+                        are stored locally on your device.
+                    </li>
+                    <li>
+                        <strong>Device &amp; Diagnostics Information:</strong> Standard, non-personally identifiable
+                        diagnostic data (such as device model, OS version, language, crash traces, and performance logs)
+                        collected automatically to diagnose technical issues and ensure stability.
+                    </li>
+                    <li>
+                        <strong>Advertising &amp; Analytics Identifiers:</strong> Standard advertising identifiers (such
+                        as the Google Advertising ID / GAID) when third-party ad networks or analytics tools are
+                        integrated into the application.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="section-3">
+                <h2><span class="section-num">3</span> Data Collection Summary</h2>
+                <ul>
+                    <li>
+                        <strong>Game State:</strong> Level progress, target scores, remaining tries, coins, booster
+                        counts.
+                        <span class="purpose-tag"><strong>Purpose:</strong> Stored locally on the device to ensure
+                            continuity between play sessions.</span>
+                    </li>
+                    <li>
+                        <strong>Diagnostics:</strong> Crash stack traces, frame rate dips, memory warnings, device
+                        model.
+                        <span class="purpose-tag"><strong>Purpose:</strong> Debugging, performance optimization, and bug
+                            fixes.</span>
+                    </li>
+                    <li>
+                        <strong>Ad Delivery:</strong> Anonymized ad request tokens, view impressions, coarse device
+                        location.
+                        <span class="purpose-tag"><strong>Purpose:</strong> Displaying rewarded or banner advertisements
+                            within the game.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="section-4">
+                <h2><span class="section-num">4</span> How We Use Your Information</h2>
+                <p>Any data processed by Candylicious is used strictly to:</p>
+                <ul>
+                    <li>Deliver and sustain smooth gameplay mechanics across all 10 stages.</li>
+                    <li>Save user preferences, audio levels, and acquired in-game items.</li>
+                    <li>Detect, prevent, and remediate technical errors, bugs, or abusive activity.</li>
+                    <li>Support free-to-play mechanics through non-intrusive, relevant advertising.</li>
+                </ul>
+            </section>
+
+            <section id="section-5">
+                <h2><span class="section-num">5</span> Third-Party Services &amp; Integrations</h2>
+                <p>Candylicious may leverage trusted third-party SDKs that process limited device metrics governed by
+                    their respective privacy terms:</p>
+                <ul>
+                    <li>
+                        <strong>Google Play Services:</strong> Used for app distribution, system integrity, and
+                        potential cloud backup services.
+                    </li>
+                    <li>
+                        <strong>Google AdMob / Ad Networks:</strong> Used to display in-game ads (such as rewarded ads
+                        for bonus moves or coins). These providers may use device identifiers according to Google's
+                        Families Policy.
+                    </li>
+                    <li>
+                        <strong>Firebase / Crash Reporting Tools:</strong> May collect anonymous crash telemetry to
+                        identify bugs in ice traps, wire mechanics, or combo logic.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="section-6">
+                <h2><span class="section-num">6</span> Children's Privacy (COPPA &amp; Google Play Families)</h2>
+                <p>Candylicious is a family-friendly casual game suitable for all ages. We do not knowingly solicit or
+                    collect personal identifiable information from children under the age of 13 (or under the applicable
+                    age of consent in your jurisdiction).</p>
+                <p>If our ad integrations operate in child-directed contexts, we configure third-party ad networks to
+                    request non-personalized ads and disable targeted behavioral tracking in full compliance with COPPA
+                    and Google Play Developer Program policies.</p>
+            </section>
+
+            <section id="section-7">
+                <h2><span class="section-num">7</span> Data Retention and Security</h2>
+                <p>All core game progression, earned coins, and score markers are retained locally on your mobile
+                    device. You may erase this data at any time by clearing the application cache and storage via your
+                    device settings or by uninstalling the application.</p>
+                <p>Where diagnostic telemetry is logged by external infrastructure, it is retained only as long as
+                    necessary for aggregate performance monitoring and error analysis.</p>
+            </section>
+
+            <section id="section-8">
+                <h2><span class="section-num">8</span> Your Rights and Choices</h2>
+                <p>You have full control over the permissions and identifiers utilized by the Game:</p>
+                <ul>
+                    <li>
+                        <strong>Resetting Advertising ID:</strong> You can reset or opt out of personalized ad tracking
+                        via your Android device settings (Settings &rarr; Privacy &rarr; Ads).
+                    </li>
+                    <li>
+                        <strong>Local Data Deletion:</strong> Uninstalling the app removes all locally cached scores,
+                        level progress, coins, and boosters.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="section-9">
+                <h2><span class="section-num">9</span> Policy Updates</h2>
+                <p>We may update this Privacy Policy from time to time to reflect game updates, new levels, or changes
+                    in legal guidelines. The updated version will be indicated by an updated "Effective Date" at the top
+                    of this document.</p>
+            </section>
+
+            <section id="section-10">
+                <h2><span class="section-num">10</span> Contact Us</h2>
+                <p>If you have any questions, feedback, or data privacy requests concerning Candylicious, please reach
+                    out to our team:</p>
+                <ul>
+                    <li><strong>Developer Support:</strong> Candylicious</li>
+                    <li><strong>Support Email:</strong> <a href="mailto:soumyajitsa@gmail.com">soumyajitsa@gmail.com</a>
+                    </li>
+                    <li><strong>Google Play Developer Page:</strong> <a
+                            href="https://play.google.com/store/apps/dev?id=7756569652824160529" target="_blank"
+                            rel="noopener">https://play.google.com/store/apps/dev?id=7756569652824160529</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2026 Candylicious. All rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html>
